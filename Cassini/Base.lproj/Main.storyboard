@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nLf-By-Gar">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7k0-g5-rG9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="Csc-Fd-5xD">
+            <objects>
+                <splitViewController id="7k0-g5-rG9" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="nLf-By-Gar" kind="relationship" relationship="masterViewController" id="LeD-rK-uBZ"/>
+                        <segue destination="F7x-ZP-QLL" kind="relationship" relationship="detailViewController" id="Wpe-Mu-RZk"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUT-Hz-Cbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1810" y="376"/>
+        </scene>
         <!--Image View Controller-->
         <scene sceneID="oNe-6j-47M">
             <objects>
@@ -37,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUS-54-OAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.79999999999995" y="-73.313343328335833"/>
+            <point key="canvasLocation" x="-564" y="851"/>
         </scene>
         <!--Cassini View Controller-->
         <scene sceneID="5GK-5Z-LL4">
@@ -110,6 +123,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="02H-6N-UpJ"/>
+        <segue reference="Wpe-Mu-RZk"/>
     </inferredMetricsTieBreakers>
 </document>
