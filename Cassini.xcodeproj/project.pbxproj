@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CE2687211F90FF080005DA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2687201F90FF080005DA37 /* AppDelegate.swift */; };
-		CE2687231F90FF080005DA37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2687221F90FF080005DA37 /* ViewController.swift */; };
 		CE2687261F90FF080005DA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2687241F90FF080005DA37 /* Main.storyboard */; };
 		CE2687281F90FF080005DA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2687271F90FF080005DA37 /* Assets.xcassets */; };
 		CE26872B1F90FF080005DA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2687291F90FF080005DA37 /* LaunchScreen.storyboard */; };
+		CE2687331F90FF840005DA37 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2687321F90FF840005DA37 /* ImageViewController.swift */; };
+		CE2687371F91035F0005DA37 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2687361F91035F0005DA37 /* DemoURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE26871D1F90FF080005DA37 /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2687201F90FF080005DA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE2687221F90FF080005DA37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE2687251F90FF080005DA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE2687271F90FF080005DA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE26872A1F90FF080005DA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE26872C1F90FF080005DA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2687321F90FF840005DA37 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		CE2687361F91035F0005DA37 /* DemoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				CE2687201F90FF080005DA37 /* AppDelegate.swift */,
-				CE2687221F90FF080005DA37 /* ViewController.swift */,
 				CE2687241F90FF080005DA37 /* Main.storyboard */,
 				CE2687271F90FF080005DA37 /* Assets.xcassets */,
 				CE2687291F90FF080005DA37 /* LaunchScreen.storyboard */,
 				CE26872C1F90FF080005DA37 /* Info.plist */,
+				CE2687321F90FF840005DA37 /* ImageViewController.swift */,
+				CE2687361F91035F0005DA37 /* DemoURL.swift */,
 			);
 			path = Cassini;
 			sourceTree = "<group>";
@@ -136,8 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2687231F90FF080005DA37 /* ViewController.swift in Sources */,
+				CE2687331F90FF840005DA37 /* ImageViewController.swift in Sources */,
 				CE2687211F90FF080005DA37 /* AppDelegate.swift in Sources */,
+				CE2687371F91035F0005DA37 /* DemoURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +280,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cassini/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mera.zaur.cs193p.Cassini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cassini/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mera.zaur.cs193p.Cassini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
