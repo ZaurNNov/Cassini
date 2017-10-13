@@ -28,6 +28,9 @@ class ImageViewController: UIViewController
         }
     }
     
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
+    
     fileprivate var imageView = UIImageView()
     
     private var image : UIImage? {
@@ -42,6 +45,7 @@ class ImageViewController: UIViewController
             // so use optional chaining to do nothing
             // if our scrollView outlet has not yet been set
             scrollView?.contentSize = imageView.frame.size
+            spinner?.stopAnimating()
         }
     }
     
@@ -52,7 +56,7 @@ class ImageViewController: UIViewController
             // this next line of code can throw an error
             // and it also will block the UI entirely while access the network
             // we really should be doing it in a separate thread
-            
+            spinner.startAnimating()
             DispatchQueue.global(qos: .userInitiated).async {
                 [weak self] in
                 let urlContents = try? Data(contentsOf: url)
