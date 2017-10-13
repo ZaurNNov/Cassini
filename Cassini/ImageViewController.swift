@@ -64,7 +64,7 @@ class ImageViewController: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageURL = DemoURL.stanford  // for demo/testing purposes only
+        //imageURL = DemoURL.stanford  // for demo/testing purposes only
     }
     
     override func viewWillAppear(_ animated: Bool) {
